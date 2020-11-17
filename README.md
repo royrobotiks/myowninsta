@@ -1,5 +1,7 @@
 # my own insta ; )
 
+![my own insta icon image](https://raw.githubusercontent.com/royrobotiks/myowninsta/main/myowninsta.jpg)
+
 **my own insta ; )** is a website / Progressive Web App that lets you share photos fast and in best quality. It’s simple, easy to use, easy to install, doesn’t have any metrics, ads or clutter and you can style its appearance as you wish. On my website, I've written down [why I made it](https://niklasroy.com/myowninsta).
 
 I’m using it as an [online photo diary](https://niklasroy.com/diary). You can use it for whatever you want ;)
