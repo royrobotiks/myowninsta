@@ -2,7 +2,7 @@
 
 my_own_insta ; ) is a website / Progressive Web App that lets you share photos fast and in best quality. It’s simple, easy to use, easy to install, doesn’t have any metrics, ads or clutter and you can style its appearance as you wish.
 
-I’m using it as an online photo diary. Kati uses it to share fungi photos. You can use it for whatever you want ;)
+I’m using it as an online photo diary. You can use it for whatever you want ;)
 
 
 ## How to use 
@@ -10,9 +10,9 @@ I’m using it as an online photo diary. Kati uses it to share fungi photos. You
 The front end is a very simple image browser. Users can scroll through a list of jpegs and when reaching the bottom of the site, more pictures are loaded.
 Tapping on a picture will open the original uploaded jpeg file in a new browser tab. 
 If the image contains Exif or IPTC metadata, the following contents will be extracted from the jpeg file and shown below each picture:
-    • Exif  “DateTimeOriginal” (the date / time when the photo has been taken)
-    • Exif GPS location (this will display a little marker icon – clicking on it shows the location on openstreetmap.org)
-    • IPTC Caption
+* Exif  “DateTimeOriginal” (the date / time when the photo has been taken)
+* Exif GPS location (this will display a little marker icon – clicking on it shows the location on openstreetmap.org)
+* IPTC Caption
 Users can install the website as an app on their homescreen / desktop by opening the info window and clicking the install link.
 
 
@@ -43,33 +43,33 @@ When you are manipulating Exif data and “myowninsta.json” via the back end, 
 In order to run your own installation of my own insta ;) you need webspace on a server which runs PHP. If you want it to work as a Progressive Web App, the server needs to be accessed via HTTPS.
 Installing step by step
 
-    • Download everything 
-    • Create a folder on your server 
-    • Drop everything there 
-    • You’re done!
+* Download everything 
+* Create a folder on your server 
+* Drop everything there 
+* You’re done!
       
 Ok, this was maybe a little bit fast. Before uploading it on your server, you might want to adapt a few things. Here’s a list:
 
-    • Modify the title, the text in the info box, and the footer in “index.html”
-    • Adapt colors and font in “myowninsta.css”
-    • Adapt colors and  the value of the variable “photo_file_name” in “myowninsta.json”. (Uploaded pictures will be renamed according to the name that you specify here.) 
-    • In case you want to modify more of the front end’s appearance, have a look at the functions “layout()” and “createContentBoxes()” in “myowninsta.js”.
-    • Change the image files in the “/icon” folder. This will be the icon of your app.
-    • Change the URL and the names in “myowninsta.webmanifest”. This is how the app will be displayed on the homescreen / desktop.
-    • Upload everything onto your server
-    • Restrict the access to the “/upload” folder with an “.htaccess” and “.htpasswd” file.
-    • Congratulations, now you have your own insta ;)
+* Modify the title, the text in the info box, and the footer in “index.html”
+* Adapt colors and font in “myowninsta.css”
+* Adapt colors and  the value of the variable “photo_file_name” in “myowninsta.json”. (Uploaded pictures will be renamed according to the name that you specify here.) 
+* In case you want to modify more of the front end’s appearance, have a look at the functions “layout()” and “createContentBoxes()” in “myowninsta.js”.
+* Change the image files in the “/icon” folder. This will be the icon of your app.
+* Change the URL and the names in “myowninsta.webmanifest”. This is how the app will be displayed on the homescreen / desktop.
+* Upload everything onto your server
+* Restrict the access to the “/upload” folder with an “.htaccess” and “.htpasswd” file.
+* Congratulations, now you have your own insta ;)
 
 
 ## Possible improvements
 
 This is my first project using PHP and JSON. I’ve never manipulated Exif and IPTC metadata with a script before. While working on this project, I learned that A2HS is not a neurodevelopmental disorder and that PWA is more than just the TLA of the Professional Windsurfers Association. I guess what I want to say is that I’m definitely not an expert on any of this. I’m not a web developer, I’m just happy that it all works. Therefore I’m also not sure if I’ll spend more time on this project in the close future, but if I should do so (or if you want to), here would be some ideas for improvements & enhancements:
-    • Make the browser always reload the full content. Not sure how this could be done, but it would lead to a much better experience, especially on the back end.
-    • Adapt the appearance of the back end to the appearance of the front end.
-    • Make the service worker actually really do something.
-    • Make an embed function for single posts.
-    • Build a bot that automatically posts content from my own insta ;) e.g. on Twitter. Because, even if I don’t like to use social networks, others still like to use them. Automatic posts could be a way to keep those updated who prefer to scroll through Twitter feeds.
-    • In case some people are using this, an aggregator app could be interesting. One could subscribe to feeds on different servers and see all pictures in one app. Heck, one could even add metrics in such an app, with likes and hearts and everything that I deliberately left out :)
+* Make the browser always reload the full content. Not sure how this could be done, but it would lead to a much better experience, especially on the back end.
+* Adapt the appearance of the back end to the appearance of the front end.
+* Make the service worker actually really do something.
+* Make an embed function for single posts.
+* Build a bot that automatically posts content from my own insta ;) e.g. on Twitter. Because, even if I don’t like to use social networks, others still like to use them. Automatic posts could be a way to keep those updated who prefer to scroll through Twitter feeds.
+* In case some people are using this, an aggregator app could be interesting. One could subscribe to feeds on different servers and see all pictures in one app. Heck, one could even add metrics in such an app, with likes and hearts and everything that I deliberately left out :)
 
 
 
