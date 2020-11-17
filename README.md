@@ -1,6 +1,6 @@
 # my own insta ; )
 
-my_own_insta ; ) is a website / Progressive Web App that lets you share photos fast and in best quality. It’s simple, easy to use, easy to install, doesn’t have any metrics, ads or clutter and you can style its appearance as you wish.
+**my own insta ; )** is a website / Progressive Web App that lets you share photos fast and in best quality. It’s simple, easy to use, easy to install, doesn’t have any metrics, ads or clutter and you can style its appearance as you wish.
 
 I’m using it as an [online photo diary](https://niklasroy.com/diary). You can use it for whatever you want ;)
 
@@ -21,7 +21,8 @@ Users can install the website as an app on their homescreen / desktop by opening
 ### Front end
 
 The front end is a single html file (index.html) which runs the Javscript “myowninsta.js”. The javascript loads the array “entries[]” from “myowninsta.json”. The array contains the ID’s of the pictures to be shown. The javascript then builds html content boxes, loads the pictures into those boxes, and creates descriptions based on the images’ Exif and IPTC metadata. When the user scrolls to the bottom of the document, the javascript builds more html boxes and fills them with more pictures, until all content is loaded.
-Progressive Web App
+
+### Progressive Web App
 
 The front end can be installed as a “Progressive Web App” (PWA). This is a bit of a hack, though. In order to be accepted by the browser as a PWA, “myowninsta.js” has to start a service worker script (“serviceworker.js”) in the background. The idea is that the service worker would offer offline functionality, when the app is used without Internet connection. However, “serviceworker.js” doesn’t really do anything. It’s only there to make the add to homescreen (A2HS) link work. The whole PWA/A2HS thing also only works, if the server is contacted via HTTPS. 
 
