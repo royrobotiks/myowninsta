@@ -1,0 +1,161 @@
+body {
+  background-color: #ccc;
+  font-family: Georgia, Times, serif;
+  margin:0px;
+  padding: 0px;
+  color:#444;
+}
+.add_button{
+      color:#222;
+      cursor:pointer;
+      padding-top:10px;
+      text-align: justify;
+}
+#caption_title{
+  color:#444;
+}
+
+#error{
+  background:red;
+  color:white;
+  font-weight: bold;
+  padding:5px;
+}
+#all{
+  opacity:0;
+  transition: opacity .5s;
+}
+#caption_title{
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a:link {/* unvisited link */
+  color:#444;
+  text-decoration: none;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+a:visited {/* visited link */
+  color:#444;
+  text-decoration: none;
+}
+a:hover {/* mouse over link */
+  color:#444;
+  text-decoration: none;
+  background: #eee;
+}
+a:active {/* selected link */
+  color:#444;
+  text-decoration: none;
+  background: #eee;
+}
+textarea{
+  resize: none;
+  color:#444;
+  background: #ddd;
+  border: none;
+  outline: none !important;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+textarea:focus {
+  background-color: white;
+}
+
+input{
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color:#ddd;
+  border: none;
+  color: #444;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Georgia, Times, serif;
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  box-sizing: border-box;
+}
+input:hover{
+  background-color:#eee;
+}
+input:active{
+  background-color:#eee;
+}
+#upload_label{
+  cursor:pointer;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#upload_label:hover{
+  cursor:pointer;
+  background: #eee;
+
+}
+#w100p {
+  margin:0px;
+  padding: 0px;
+  width:100%;
+}
+#file{
+}
+#headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  text-align: center;
+}
+#content_box{
+  width=100%;
+}
+
+textarea {
+  /*width: 80%;*/
+  height: 20%;
+  padding: 5px;
+  font-family: Georgia, Times, serif;
+}
+img{
+  border: solid #fff;
+  /*border-width: 5px;*/
+}
+
+
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
+[type="file"] + label {
+  /* File upload button styles */
+}
+[type="file"]:focus + label,
+[type="file"] + label:hover {
+  /* File upload hover state button styles */
+}
+[type="file"]:focus + label {
+  /* File upload focus state button styles */

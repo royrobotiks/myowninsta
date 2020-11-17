@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my own insta ;)</title>
+    <meta  name="theme-color" content="#ccc">
+    <link   rel="stylesheet"  type="text/css" href="myowninsta.css">
+    <link   rel="manifest"    href="myowninsta.webmanifest">
+    <script src="a2hs.js"     defer></script>
+    <script src="exif.js"     defer></script>
+    <script src="myowninsta.js"    defer></script>
+  </head>
+  <body  onload="init()" onscroll="scrolling()">
+    <div id="w100p">   <!--    invisible div for measuring screen width     --></div>
+    <div id="h100p">   <!--    invisible div for measuring screen height     --></div>
+    <div id="debug_box"></div>
+    <div id="title_container">
+      <div id="title">my own insta ;)</div>
+    </div>
+    <div id="headspace"></div>
+    <div id="fade_box"></div>
+    <div id="content_box"></div>
+    <div id="info_container">
+      <div id="info_bgnd"></div>
+      <div id="info_box">
+        <div id="info_text">
+          <h3>Hello!<br>Welcome to my own insta!</h3>
+            <p>
+              Here comes some information.
+            </p>
+            <div class="add_text">
+              <!--    Here comes a text to ask the user if they want to add this to their home screen.
+                      This text is not shown, when the site is already added to the homescreen.
+                      This just works if this site is served via https-->
+              <div class="add_button">
+                <!--  Here comes the 'add to homescreen' link -->
+              </div>
+            </div>
+            <p>
+              <!-- keep a link to my own insta or throw it out. As you wish-->
+              Made with <a href="https://niklasroy.com/myowninsta">my own insta ;)</a>
+            </p>
+          </div>
+          <div id="open_info_wrapper" onclick="showInfo()"  onmouseover="overShowInfo()" onmouseout="outShowInfo()"><div id="open_info"><div id="open_shift">&#187;</div></div></div>
+      </div>
+    </div>
+    <div id="bottom_of_content"></div>
+    <div id="footer">
+        <p>
+        No more pictures to see here :(
+        </p>
+    </div>
+  </body>
+</html>

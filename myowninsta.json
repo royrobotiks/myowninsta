@@ -1,0 +1,8 @@
+{
+        "version"          : "0.9",
+        "photo_file_name"  : "",
+        "foreground_color" : "white",
+        "foreground_hover" : "#eee",
+        "background_color" : "#ccc",
+        "entries": []
+      }
