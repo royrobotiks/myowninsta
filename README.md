@@ -47,7 +47,8 @@ When you are manipulating Exif data and “myowninsta.json” via the back end, 
 ### Requirements
 
 In order to run your own installation of **my own insta ;)** you need webspace on a server which runs PHP. If you want it to work as a Progressive Web App, the server needs to be accessed via HTTPS.
-Installing step by step
+
+### Installing step by step
 
 * Download everything 
 * Create a folder on your server 
